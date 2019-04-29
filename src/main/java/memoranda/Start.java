@@ -44,7 +44,7 @@ public class Start {
     }
     
     public static void main(String[] args) {
-        if (checkIfAlreadyStartet) {
+        /*if (checkIfAlreadyStartet) {
             try {
                 // Try to open a socket. If socket opened successfully (app is already started), take no action and exit.
                 Socket socket = new Socket("127.0.0.1", DEFAULT_PORT);
@@ -55,8 +55,10 @@ public class Start {
                 // If socket is not opened (app is not started), continue
                 // e.printStackTrace();
             }
-            new SLThread().start();
-        }
+            
+        }*/
+        
+        new SLThread().start();
         
         //System.out.println(EventsScheduler.isEventScheduled());
         if ((args.length == 0) || (!args[0].equals("-m"))) {
