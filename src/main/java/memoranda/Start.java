@@ -58,6 +58,7 @@ public class Start {
             
         }*/
         
+        //SER316 TASK 1: COMPLEXITY #3
         new SLThread().start();
         
         //System.out.println(EventsScheduler.isEventScheduled());
