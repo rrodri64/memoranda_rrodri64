@@ -13,6 +13,9 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.Vector;
 
+import main.java.memoranda.interfaces.Event;
+import main.java.memoranda.interfaces.EventNotificationListener;
+
 /**
  *
  */

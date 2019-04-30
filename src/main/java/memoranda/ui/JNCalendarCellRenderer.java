@@ -18,8 +18,8 @@ import javax.swing.JTable;
 
 import main.java.memoranda.CurrentProject;
 import main.java.memoranda.EventsManager;
-import main.java.memoranda.Task;
 import main.java.memoranda.date.CalendarDate;
+import main.java.memoranda.interfaces.Task;
 /**
  *
  */

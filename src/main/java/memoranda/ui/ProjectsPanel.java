@@ -34,15 +34,15 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
 import main.java.memoranda.CurrentProject;
-import main.java.memoranda.NoteList;
-import main.java.memoranda.Project;
-import main.java.memoranda.ProjectListener;
 import main.java.memoranda.ProjectManager;
-import main.java.memoranda.ResourcesList;
-import main.java.memoranda.TaskList;
 import main.java.memoranda.date.CalendarDate;
 import main.java.memoranda.date.CurrentDate;
 import main.java.memoranda.date.DateListener;
+import main.java.memoranda.interfaces.NoteList;
+import main.java.memoranda.interfaces.Project;
+import main.java.memoranda.interfaces.ProjectListener;
+import main.java.memoranda.interfaces.ResourcesList;
+import main.java.memoranda.interfaces.TaskList;
 import main.java.memoranda.util.*;
 
 /*$Id: ProjectsPanel.java,v 1.14 2005/01/04 09:59:22 pbielen Exp $*/
@@ -382,7 +382,7 @@ public class ProjectsPanel extends JPanel implements ExpandablePanel {
 			i < prjTablePanel.projectsTable.getSelectedRows().length;
 			i++) {
 			prj =
-				(main.java.memoranda.Project) prjTablePanel
+				(main.java.memoranda.interfaces.Project) prjTablePanel
 					.projectsTable
 					.getModel()
 					.getValueAt(

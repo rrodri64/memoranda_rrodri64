@@ -28,8 +28,8 @@ import javax.swing.text.html.HTMLDocument;
 
 import main.java.memoranda.CurrentNote;
 import main.java.memoranda.History;
-import main.java.memoranda.Note;
 import main.java.memoranda.date.CurrentDate;
+import main.java.memoranda.interfaces.Note;
 import main.java.memoranda.ui.htmleditor.HTMLEditor;
 import main.java.memoranda.util.Configuration;
 import main.java.memoranda.util.Context;

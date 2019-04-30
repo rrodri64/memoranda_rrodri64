@@ -51,6 +51,11 @@ import main.java.memoranda.*;
 import main.java.memoranda.date.CalendarDate;
 import main.java.memoranda.date.CurrentDate;
 import main.java.memoranda.date.DateListener;
+import main.java.memoranda.interfaces.NoteList;
+import main.java.memoranda.interfaces.Project;
+import main.java.memoranda.interfaces.ProjectListener;
+import main.java.memoranda.interfaces.ResourcesList;
+import main.java.memoranda.interfaces.TaskList;
 import main.java.memoranda.ui.treetable.*;
 import main.java.memoranda.util.*;
 

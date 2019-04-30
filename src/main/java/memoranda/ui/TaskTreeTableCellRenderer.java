@@ -18,9 +18,9 @@ import javax.swing.table.TableCellRenderer;
 import javax.swing.tree.DefaultTreeCellRenderer;
 import javax.swing.tree.TreeCellRenderer;
 
-import main.java.memoranda.Project;
-import main.java.memoranda.Task;
 import main.java.memoranda.date.CurrentDate;
+import main.java.memoranda.interfaces.Project;
+import main.java.memoranda.interfaces.Task;
 
 /**
  * 

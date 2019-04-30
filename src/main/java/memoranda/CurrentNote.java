@@ -3,6 +3,9 @@ package main.java.memoranda;
 import java.util.Collection;
 import java.util.Vector;
 
+import main.java.memoranda.interfaces.Note;
+import main.java.memoranda.interfaces.NoteListener;
+
 public class CurrentNote {
 
 	private static Note currentNote = null;
