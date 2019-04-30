@@ -18,7 +18,7 @@ import main.java.memoranda.util.Local;
 import nu.xom.Attribute;
 import nu.xom.Element;
 
-/**
+/** 
  * 
  */
 /*$Id: EventImpl.java,v 1.9 2004/10/06 16:00:11 ivanrise Exp $*/
