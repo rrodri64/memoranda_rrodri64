@@ -25,8 +25,8 @@ public class CurrentNote {
         set(null, true);
     }
 
-    public static void addNoteListener(INoteListener nl) {
-        noteListeners.add(nl);
+    public static void addNoteListener(INoteListener noteListen) {
+        noteListeners.add(noteListen);
     }
 
     public static Collection getChangeListeners() {
