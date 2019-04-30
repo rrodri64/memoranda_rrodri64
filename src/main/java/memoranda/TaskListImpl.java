@@ -275,7 +275,7 @@ public class TaskListImpl implements ITaskList {
      * @param t
      * @return long[] of size 2. First long is expended effort in milliseconds, 2nd long is total effort in milliseconds
      */
-    public long[] calculateCompletionFromSubTasks(ITask t) {
+    public long[] getSubTaskCompletion(ITask t) {
 //        Util.debug("Task " + t.getText());
         
         long[] res = new long[2];
@@ -285,7 +285,7 @@ public class TaskListImpl implements ITaskList {
             Collection subTasks = getAllSubTasks(t.getID());
             for (Iterator iter = subTasks.iterator(); iter.hasNext();) {
             	ITask e = (ITask) iter.next();
-            	long[] subTaskCompletion = calculateCompletionFromSubTasks(e);
+            	long[] subTaskCompletion = getSubTaskCompletion(e);
             	expendedEffort = expendedEffort + subTaskCompletion[0];
             	totalEffort = totalEffort + subTaskCompletion[1];
             }

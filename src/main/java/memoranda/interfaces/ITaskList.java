@@ -37,7 +37,7 @@ public interface ITaskList {
     public long calculateTotalEffortFromSubTasks(ITask t);
     public CalendarDate getLatestEndDateFromSubTasks(ITask t);
     public CalendarDate getEarliestStartDateFromSubTasks(ITask t);
-    public long[] calculateCompletionFromSubTasks(ITask t);
+    public long[] getSubTaskCompletion(ITask t);
 
     nu.xom.Document getXMLContent();
 

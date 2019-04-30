@@ -586,7 +586,7 @@ public class TaskPanel extends JPanel {
         }
         
         if(dlg.calcCompletionChB.isSelected()) {
-            long[] res = tl.calculateCompletionFromSubTasks(t);
+            long[] res = tl.getSubTaskCompletion(t);
             int thisProgress = (int) Math.round((((double)res[0] / (double)res[1]) * 100));
             t.setProgress(thisProgress);
         }
