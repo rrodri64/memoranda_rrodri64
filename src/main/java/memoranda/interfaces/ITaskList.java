@@ -37,6 +37,11 @@ public interface ITaskList {
     public long calculateTotalEffortFromSubTasks(ITask t);
     public CalendarDate getLatestEndDateFromSubTasks(ITask t);
     public CalendarDate getEarliestStartDateFromSubTasks(ITask t);
+    
+    //TASK 3-2 SMELL BETWEEN CLASSES
+    //#10 - 'Too long identifier'.
+    //This method identifier was extremely long,
+    //so it was shortened to be reasonable.
     public long[] getSubTaskCompletion(ITask t);
 
     nu.xom.Document getXMLContent();

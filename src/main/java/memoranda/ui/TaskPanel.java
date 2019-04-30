@@ -586,6 +586,11 @@ public class TaskPanel extends JPanel {
         }
         
         if(dlg.calcCompletionChB.isSelected()) {
+            
+            //TASK 3-2 SMELL BETWEEN CLASSES
+            //#10 - 'Too long identifier'.
+            //This method identifier was extremely long,
+            //so it was shortened to be reasonable.
             long[] res = tl.getSubTaskCompletion(t);
             int thisProgress = (int) Math.round((((double)res[0] / (double)res[1]) * 100));
             t.setProgress(thisProgress);

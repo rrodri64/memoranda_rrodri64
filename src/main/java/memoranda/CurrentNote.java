@@ -24,7 +24,11 @@ public class CurrentNote {
 //    	 set toSave to true to mimic status quo behaviour only. the appropriate setting could be false
         set(null, true);
     }
-
+    
+    //TASK 3-1 SMELL WITHIN A CLASS
+    //#11 - 'Too short identifier'.
+    //This argument variable identifier was extremely short,
+    //so it was lengthened to be more descriptive.
     public static void addNoteListener(INoteListener noteListen) {
         noteListeners.add(noteListen);
     }

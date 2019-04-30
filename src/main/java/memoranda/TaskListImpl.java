@@ -275,6 +275,11 @@ public class TaskListImpl implements ITaskList {
      * @param t
      * @return long[] of size 2. First long is expended effort in milliseconds, 2nd long is total effort in milliseconds
      */
+    
+    //TASK 3-2 SMELL BETWEEN CLASSES
+    //#10 - 'Too long identifier'.
+    //This method identifier was extremely long,
+    //so it was shortened to be reasonable.
     public long[] getSubTaskCompletion(ITask t) {
 //        Util.debug("Task " + t.getText());
         
