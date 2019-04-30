@@ -16,7 +16,7 @@ import main.java.memoranda.date.CalendarDate;
  * 
  */
 /*$Id: Task.java,v 1.9 2005/06/16 04:21:32 alexeya Exp $*/
-public interface Task {
+public interface ITask {
     
     public static final int SCHEDULED = 0;
 
@@ -68,7 +68,7 @@ public interface Task {
     void removeDependsFrom(Task task);*/
             
     Collection getSubTasks();    
-    Task getSubTask(String id);
+    ITask getSubTask(String id);
     
     boolean hasSubTasks(String id);
     
@@ -78,7 +78,7 @@ public interface Task {
     void setDescription(String description);
     String getDescription();
 
-    Task getParentTask();
+    ITask getParentTask();
     String getParentId();
     
     void freeze();

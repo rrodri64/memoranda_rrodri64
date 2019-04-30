@@ -1,5 +1,5 @@
 package main.java.memoranda.interfaces;
 
-public interface NoteListener {
-  void noteChange(Note note, boolean toSaveCurrentNote);
+public interface INoteListener {
+  void noteChange(INote note, boolean toSaveCurrentNote);
 }
